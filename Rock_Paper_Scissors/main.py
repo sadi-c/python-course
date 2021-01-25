@@ -34,6 +34,7 @@ def weaponMenu():
     print("(2) Paper")
     print("(3) Scissors")
     print("(4) Main Menu")
+ 
   def singlePlayer():
  
     #create a list of play options
@@ -72,4 +73,40 @@ def weaponMenu():
                 print("You win!", player, "cut", computer)
         else:
             print("That's not a valid play. Check your spelling!")   
+
+            def twoPlayer():
+    print("Choose Rock Paper or Scissors, try to hide your choice!\n")
+    player1 = input("Player 1 : ")
+    player2 = input("Player 2 : ")
+    print("")
+     
+ 
+    if (player1 == 'rock' and player2 == 'scissors'):
+        print ("Player 1 wins.")
+ 
+    elif (player1 == 'rock' and player2 == 'rock'):
+        print ("Tie")
+ 
+    elif (player1 == 'scissors' and player2 == 'paper'):
+        print ("Player 1 wins.")
+ 
+    elif (player2 == 'scissors' and player2 == 'scissors'):
+        print ("Tie")
+ 
+    elif (player1 == 'paper' and player2 == 'paper'):
+        print ("Tie")
+ 
+    elif (player1 == 'paper' and player2 == 'scissors'):
+        print ("Player 2 wins.")
+ 
+    elif (player1 == 'rock'and player2 == 'paper'):
+        print ("Player 2 wins.")
+ 
+    elif (player1 == 'paper' and player2 == 'rock'):
+        print ("Player 1 wins.")
+ 
+    elif (player1 == 'scissors' and player2 == 'rock'):
+        print ("Player 2 wins.")
+ 
+ 
          
