@@ -21,7 +21,8 @@ def mainMenu():
         twoPlayer()
     elif choice == "4":
         endProgram()
-           #rules module    
+         
+    #rules module    
 def rules():
     print("RULES")
     print("Paper Covers Rock, Rock Smashes Scissors, Scissors Cuts Paper\n")
@@ -34,8 +35,8 @@ def weaponMenu():
     print("(2) Paper")
     print("(3) Scissors")
     print("(4) Main Menu")
- 
-  def singlePlayer():
+     
+def singlePlayer():
  
     #create a list of play options
     moves = ["rock", "paper", "scissors"]
@@ -72,9 +73,10 @@ def weaponMenu():
             else:
                 print("You win!", player, "cut", computer)
         else:
-            print("That's not a valid play. Check your spelling!")   
-
-            def twoPlayer():
+            print("That's not a valid play. Check your spelling!")
+ 
+ 
+def twoPlayer():
     print("Choose Rock Paper or Scissors, try to hide your choice!\n")
     player1 = input("Player 1 : ")
     player2 = input("Player 2 : ")
@@ -108,14 +110,13 @@ def weaponMenu():
     elif (player1 == 'scissors' and player2 == 'rock'):
         print ("Player 2 wins.")
  
- def endGame():
+ 
+def endGame():
      
-    end = input("Would you like to end the game? (yes or no) ")
+    end = input("Would you like to end the Game? (yes or no) ")
     if end == "no":
         mainMenu()
     else:
         quit()
  
 mainMenu()
-     
-         
