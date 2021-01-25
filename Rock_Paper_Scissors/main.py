@@ -108,9 +108,9 @@ def weaponMenu():
     elif (player1 == 'scissors' and player2 == 'rock'):
         print ("Player 2 wins.")
  
- def endProgram():
+ def endGame():
      
-    end = input("Would you like to end the program? (yes or no) ")
+    end = input("Would you like to end the game? (yes or no) ")
     if end == "no":
         mainMenu()
     else:
