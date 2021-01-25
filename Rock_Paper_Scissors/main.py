@@ -21,4 +21,18 @@ def mainMenu():
         twoPlayer()
     elif choice == "4":
         endProgram()
+           #rules module    
+def rules():
+    print("RULES")
+    print("Paper Covers Rock, Rock Smashes Scissors, Scissors Cuts Paper\n")
+     
+    mainMenu()
+ 
+def weaponMenu():
+    print("Choose your weapon!")
+    print("(1) Rock")
+    print("(2) Paper")
+    print("(3) Scissors")
+    print("(4) Main Menu")
+     
          
