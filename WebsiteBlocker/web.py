@@ -18,11 +18,9 @@ while True:
        print("Fun time")
        with open(hosts_path, "r+") as file:
            content = file.readlines()
-           file.seek(0)  // reset the pointer to the top of the text file
+           file.seek(0)  
            for line in content:
-               // here comes the tricky line, basically we overwrite the whole file
                if not any(website in line for website in web_sites_list):
                    file.write(line)
-               // do nothing otherwise
-           file.truncate() // this line is used to delete the trailing lines (that contain DNS)
+           file.truncate() 
     time.sleep(5)
